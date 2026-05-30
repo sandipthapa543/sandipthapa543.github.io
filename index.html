@@ -1,73 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip Thapa - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<link rel="stylesheet" href="styles.css">
-
 <body>
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Sandip Thapa</span></h1>
+                <h2>Data Engineer • Software Engineer</h2>
+                <p>Architecting cloud-native data platforms and GenAI solutions</p>
+                <div class="social-links">
+                    <a href="mailto:sandip.thapa543@gmail.com" title="Email"><i class='bx bx-envelope'></i></a>
+                    <a href="https://github.com/sandipthapa543" target="_blank" title="GitHub" id="gitlink"><i class='bx bxl-github'></i></a>
+                    <a href="https://linkedin.com/in/sandip-thapa-557395180" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://public.tableau.com/app/profile/sandip.thapa1/vizzes" target="_blank" title="Tableau"><i class='bx bx-bar-chart-alt-2'></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img id="profile" src="" alt="Sandip Thapa" width="200" height="200">
+                <div class="followers-badge">
+                    <i class='bx bx-user'></i> <span id="followers">...</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<div class="main" align="center" >
-    <img id="profile"
-         height="150"
-         width="150">
-    <h1 id="Name"></h1>
-    <h3 id="bio"></h3>
-    <p id="followers" ></p>
-    <p>
-        <a id="gitlink"><img src="image/githublogo.png" >
-        </a>
-        </a>
-    </p>
-    <h2 font="bold">GitHub Projects</h2>
-</div>
-<div class="repos"  >
+    <main>
+        <section id="about" class="container">
+            <h2 class="section-title">Summary</h2>
+            <div class="card">
+                <p id="bio" class="bio-text"></p>
+                <p>Data Engineer with 5+ years of experience delivering 10+ successful projects across healthcare, education, and retail industries. Proven expertise in designing and implementing cloud-based data and analytics architectures on AWS and Azure, enabling scalable, secure, and high-performance data platforms. Strong background in data architecture, ETL/ELT pipelines, and data warehousing for both structured and unstructured data.</p>
+                <br>
+                <p>Experienced in building GenAI-powered solutions using Amazon Bedrock, OCR-based document processing, and Retrieval-Augmented Generation (RAG) pipelines to support intelligent search, document automation, and insight extraction. Adept at translating complex business requirements into reliable, production-ready data solutions.</p>
+            </div>
+        </section>
 
-    <table style="width:100%" >
-        <thead>
-        <tr>
-            <th scope="col" >Name</th>
-            <th scope="col" >URL</th>
-            <th scope="col">Language</th>
-        </tr>
-        </thead>
-        <tbody id="tables">
-        </tbody>
-    </table>
-</div>
+        <section id="skills" class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Scripts</h3>
+                    <div class="skill-chips">
+                        <span>Python</span><span>SQL</span><span>PL/SQL</span><span>Gremlin</span><span>Bash</span><span>PowerShell</span><span>FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-chips">
+                        <span>SQL Server</span><span>Oracle 11g</span><span>MongoDB</span><span>DynamoDB</span><span>BigQuery</span><span>Postgres</span><span>Pinecone</span><span>OpenSearch</span><span>Qdrant</span><span>Neptune</span><span>BurstIQ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Data</h3>
+                    <div class="skill-chips">
+                        <span>AWS</span><span>Azure</span><span>Docker</span><span>dbt</span><span>S3</span><span>ECS</span><span>EC2</span><span>Lambda</span><span>Databricks</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>GenAI & Tools</h3>
+                    <div class="skill-chips">
+                        <span>Amazon Bedrock</span><span>Azure OpenAI</span><span>Langchain</span><span>Langsmith</span><span>Langfuse</span><span>Tableau</span><span>Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Lead Data Engineer</h3>
+                        <h4>Leapfrog Technology</h4>
+                        <span class="date">Jan 2026 - Present</span>
+                        <ul>
+                            <li>Own and define end-to-end architecture for cloud-native data platforms and GenAI solutions across healthcare, education, and construction domains.</li>
+                            <li>Lead the design and delivery of RAG-based LLM systems using Amazon Bedrock, LangChain, vector databases, and OCR pipelines.</li>
+                            <li>Architect event-driven cloud ecosystems on AWS using Lambda, API Gateway, S3, and DynamoDB.</li>
+                            <li>Design modern data pipelines for medical insurance claim billing systems, migrating legacy TimeXtender ETL workflows to dbt.</li>
+                            <li>Architect cloud data warehouse platforms using Google BigQuery, supporting petabyte-scale analytics workloads.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Senior Software Engineer – Data</h3>
+                        <h4>Leapfrog Technology</h4>
+                        <span class="date">Jan 2024 – Dec 2025</span>
+                        <ul>
+                            <li>Designed and implemented cloud-based data and AI architectures for healthcare and education platforms.</li>
+                            <li>Led OCR + LLM document intelligence pipelines for healthcare billing and EHR automation using Amazon Bedrock and vector search.</li>
+                            <li>Designed and optimized RAG pipelines, including embedding strategies, chunking, indexing, and retrieval logic.</li>
+                            <li>Built graph-based data models and optimized Gremlin queries for high-performance APIs on BurstIQ.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Software Engineer II – Data</h3>
+                        <h4>Leapfrog Technology</h4>
+                        <span class="date">Jan 2023 – Dec 2023</span>
+                        <ul>
+                            <li>Built and maintained ETL pipelines for healthcare and construction data platforms.</li>
+                            <li>Developed data transformation, validation, and reporting workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>Data Engineer / Software Engineer II</h3>
+                        <h4>Cotiviti Nepal</h4>
+                        <span class="date">Jul 2021 – Jan 2023</span>
+                        <ul>
+                            <li>Transformed and validated retail audit data based on business logic provided by US-based auditors.</li>
+                            <li>Extracted, merged, and loaded data from multiple client sources into Microsoft SQL Server.</li>
+                            <li>Built dynamic workflows, stored procedures, and dynamic SQL to automate data processing.</li>
+                            <li>Developed executive-level Tableau dashboards based on provided UI/UX designs for an Australia Client within a tight SLA.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="card education-card">
+                <i class='bx bxs-graduation'></i>
+                <div>
+                    <h3>BSc (Honors) Computing</h3>
+                    <p>Softwarica College of IT and E-commerce (Coventry University)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title">GitHub Projects</h2>
+            <div id="repos-grid" class="repos-grid">
+                <!-- Repos will be injected here via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sandip Thapa. Built with <i class='bx bxs-coffee'></i></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<script>
-    fetch("https://api.github.com/users/sandipthapa543")
-        .then(Response=>Response.json())
-        .then(function (data) {
-            let followersCount= data['followers']
-            let followerInfo=`GitHub Followers ${followersCount}`
-            document.getElementById('profile').src=data['avatar_url']
-            document.getElementById('Name').textContent=data['name']
-            document.getElementById('bio').textContent=data['bio']
-            document.getElementById('followers').textContent=followerInfo
-            document.getElementById('gitlink').href=data['html_url']
-
-        }),
-
-        fetch("https://api.github.com/users/sandipthapa543/repos")
-            .then(Response=>Response.json())
-            .then(data=>{
-                let html='';
-                data.forEach(repo=>{
-                    html +='<tr>';
-                    html +='<td>'+ repo.name +'</td>';
-                    html +='<td >' +repo.html_url +'</td>';
-                    html +='<td>'+ repo.language +'</td>';
-                    html +='</tr>';
-
-
-                });
-                document.getElementById('tables').innerHTML=html;
-            })
-
-</script>
