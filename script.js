@@ -4,15 +4,7 @@ const username = "sandipthapa543";
 fetch(`https://api.github.com/users/${username}`)
     .then(response => response.json())
     .then(data => {
-        // Set profile image
-        const profileImg = document.getElementById('profile');
-        if (data.avatar_url) {
-            profileImg.src = data.avatar_url;
-        } else {
-            profileImg.style.display = 'none'; // hide if no avatar
-        }
-        
-        // Set Bio
+        // Bio and Followers will be set from GitHub, but image will be static from local file
         const bioElem = document.getElementById('bio');
         if (data.bio) {
             bioElem.textContent = `"${data.bio}"`;
